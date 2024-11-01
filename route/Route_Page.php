@@ -1,14 +1,14 @@
 <?php
-// route/Route_Page.php
+// Route_Page.php
 
-// ตัวอย่าง route สำหรับหน้าเว็บ
-$route = $_GET['route'] ?? '';
+// กำหนด path สำหรับ views
+$page = isset($_GET['page']) ? $_GET['page'] : 'index'; // ค่าเริ่มต้นเป็น 'index'
+$viewPath = 'view/' . $page . '.html'; // สร้าง path สำหรับไฟล์ที่ต้องการโหลด
 
-if ($route == '') {
-    include 'controllers/HomeController.php';
-} elseif ($route == 'about') {
-    include 'controllers/AboutController.php';
+// ตรวจสอบว่ามีไฟล์อยู่จริงหรือไม่
+if (file_exists($viewPath)) {
+    include $viewPath; // ถ้ามีให้โหลดไฟล์ที่ตรงกัน
 } else {
-    echo "404 - Page not found";
+    include 'view/404.html'; // ถ้าไม่มีให้โหลดหน้า 404
 }
 ?>
