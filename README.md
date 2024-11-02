@@ -28,9 +28,9 @@ Framework นี้ออกแบบมาให้ใช้งานบน sha
 
 ## วิธีการใช้งาน
 1. **Routing สำหรับ API**: API route ทั้งหมดที่เริ่มต้นด้วย `api/` จะถูกส่งไปยัง `route/Route_API.php`
-   - ตัวอย่าง: การเรียก `http://localhost/index.php?route=api/example` จะเรียกไปที่ `API/UserAPI.php`
+   - ตัวอย่าง: การเรียก `http://localhost/api/example` จะเรียกไปที่ `API/UserAPI.php`
 2. **Routing สำหรับหน้าเว็บ**: หน้าเว็บทั้งหมดที่ไม่ขึ้นต้นด้วย `api/` จะถูกส่งไปยัง `route/Route_Page.php`
-   - ตัวอย่าง: การเรียก `http://localhost/index.php?page=example` จะไปที่ `controllers/AboutController.php` (ถ้าไฟล์นี้มีอยู่)
+   - ตัวอย่าง: การเรียก `http://localhost/example` จะไปที่ `controllers/AboutController.php` (ถ้าไฟล์นี้มีอยู่)
 
 3. **เชื่อมต่อฐานข้อมูล**: ใช้ฟังก์ชัน `db_connect()` ที่กำหนดใน `config/config.php` เพื่อเชื่อมต่อฐานข้อมูลแบบ `mysqli`
    - ตัวอย่างการใช้งาน:
