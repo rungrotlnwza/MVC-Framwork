@@ -1,8 +1,10 @@
 <?php
 // Route_Page.php
 
+// กำหนด page ตาม URI
+$page = empty($requestUri) ? '/' : $requestUri; // หากไม่มีการระบุหน้า ให้กำหนดเป็น 'home'
+
 // กำหนด path สำหรับ views
-$page = isset($_GET['page']) ? $_GET['page'] : 'index'; // ค่าเริ่มต้นเป็น 'index'
 $viewPath = 'view/' . $page . '.html'; // สร้าง path สำหรับไฟล์ที่ต้องการโหลด
 
 // ตรวจสอบว่ามีไฟล์อยู่จริงหรือไม่
