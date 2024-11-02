@@ -1,4 +1,4 @@
-# My MVC Framework
+# MVC Framework
 
 Framework นี้ออกแบบมาให้ใช้งานบน shared hosting โดยใช้โครงสร้างแบบ MVC และเขียนด้วย PHP แบบ procedural พร้อมรองรับ routing สำหรับทั้งหน้าเว็บและ API
 
