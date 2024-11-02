@@ -6,7 +6,7 @@ Framework นี้ออกแบบมาให้ใช้งานบน sha
 ```
 /my_mvc_framework
 ├── /API                 # สำหรับ API Controllers
-│   └── example.php   # ตัวอย่าง API ที่เกี่ยวกับสินค้า
+│   └── example.php      # ตัวอย่าง API ที่เกี่ยวกับสินค้า
 ├── /assets              # เก็บไฟล์ static ต่าง ๆ เช่น CSS, JavaScript, รูปภาพ
 ├── /config              # เก็บไฟล์ config เช่น config.php
 │   └── config.php
@@ -14,7 +14,7 @@ Framework นี้ออกแบบมาให้ใช้งานบน sha
 │   ├── Route_API.php    # Routing ของ API
 │   └── Route_Page.php   # Routing ของหน้าเว็บ
 ├── /view                # ไฟล์ HTML template
-│   ├── 404.html          # Routing ของ API
+│   ├── 404.html         # Routing ของ API
 │   └── aboutpage.html   # Routing ของหน้าเว็บ
 └── index.php            # Entry point ของ framework
 ```
